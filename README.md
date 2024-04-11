@@ -1,2 +1,2 @@
 # C-Programming
-All C programs from (Programming and Algorithm classes)
+All C programs from Programming and Algorithm 1 classes
