@@ -10,12 +10,14 @@ int main(){
 	{
 		if(a%i==0){
 			printf("%d \n",i);
+				sum += i;
 		}
 		
-		sum = i+i;
+	
 		
 	}
 	printf("The sum of the positive factors are: %d", sum);
 	
 	return 0;
 	}
+	
