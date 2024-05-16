@@ -1,0 +1,20 @@
+create database emp;
+use emp;
+create table info (
+employee_id int primary key,
+name varchar(50),
+department varchar(50),
+salary int (10)
+);
+insert into info values (1, 'Ram', 'IT', 25000),
+(2, 'Shyam' , 'Sales', 30000),
+(3, 'Hari', 'Marketing', 15000),
+(4, 'Krishna', 'Physical', 40000);
+select * from info;
+select count(*) as total_emp from info;
+select sum(salary) as Total_sal from info;
+select min(salary) from info group by salary;
+select max(salary) from info group by salary;
+select avg(salary) as average_salary from info;
+select department, max(salary) as highest_salary from info group by department;
+select department, max(salary) as highest_salary from info group by department having max(salary) > 30000;
